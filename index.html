@@ -1,11 +1,38 @@
 <html>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <head>
             <link rel="stylesheet" href="style.css">
         </head>
         <body>
+            <aside>
+                <iframe class="pdf-preview" id="resume-pdf" src="test.pdf"></iframe>
+            </aside>
+
             <div class="rounded-square">
                 <area shape="rect">
+
+                <div class="banner">
+                    <area shape="rect">University of Oklahoma '24
+                </div>
+
+                <div>
+                    <p class="resume-button" id="resume-toggle-button">Show Resume</p>
+                    <script>
+                        const toggleBtn = document.getElementById("resume-toggle-button");
+                        const resume = document.getElementById("resume-pdf");
+                        toggleBtn.addEventListener("click", () => {
+                            if (resume.style.display === "block") {
+                                resume.style.display = "none";
+                                toggleBtn.textContent = "Show Resume"
+                            }
+                            else {
+                                resume.style.display = "block"
+                                toggleBtn.textContent = "Hide Resume"
+                            }
+                        });
+                    </script>
+                </div>
             </div>
+            
         </body>
 </html>
