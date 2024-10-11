@@ -4,9 +4,7 @@
             <link rel="stylesheet" href="style.css">
         </head>
         <body>
-            <aside>
-                <iframe class="pdf-preview" id="resume-pdf" src="test.pdf"></iframe>
-            </aside>
+            <iframe class="pdf-preview" id="resume-pdf" src="test.pdf"></iframe>
 
             <div class="rounded-square">
                 <area shape="rect">
@@ -17,20 +15,7 @@
 
                 <div>
                     <p class="resume-button" id="resume-toggle-button">Show Resume</p>
-                    <script>
-                        const toggleBtn = document.getElementById("resume-toggle-button");
-                        const resume = document.getElementById("resume-pdf");
-                        toggleBtn.addEventListener("click", () => {
-                            if (resume.style.display === "block") {
-                                resume.style.display = "none";
-                                toggleBtn.textContent = "Show Resume"
-                            }
-                            else {
-                                resume.style.display = "block"
-                                toggleBtn.textContent = "Hide Resume"
-                            }
-                        });
-                    </script>
+                    <script src="justsayin.js"></script>
                 </div>
             </div>
             
