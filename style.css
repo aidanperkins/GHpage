@@ -13,19 +13,20 @@ body {
 }
 
 .rounded-square {
-    margin: auto;
-    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
     border-radius: 25px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     width: 25%;
-    height: 70%;
+    aspect-ratio: 1/1.618;
     overflow: hidden;
 }
 
 .banner {
     background-color: crimson;
     color: rgb(255, 253, 208);
-    height: 28;
+    height: fit-content;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.25vw;
@@ -46,11 +47,12 @@ body {
     height: 100%;
 }
 
-.resume-button {
+.toggle-button {
     color: rgb(255, 253, 208);
     background-color: crimson;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: fit-content;
+    font-size: 125%;
     border-radius: 10px;
     padding-left: 4px;
     padding-right: 4px;
@@ -58,8 +60,30 @@ body {
     padding-bottom: 2px;
 }
 
-aside {
-    float: right;
+.account-button {
+    color: rgb(255, 253, 208);
+    background-color: rgb(192, 16, 51);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 125%;
+    width: fit-content;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 5px;
+}
+
+.bar {
+    position: fixed;
+    background-color: crimson;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
 }
 
 @keyframes gradientAnimation {
