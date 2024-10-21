@@ -12,10 +12,10 @@ body {
     background-attachment: fixed;
 }
 
-.rounded-square {
+.profile-box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: 40px;
     border-radius: 25px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     width: 25%;
@@ -26,7 +26,7 @@ body {
 .login-box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: 40px;
     border-radius: 25px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     width: 25%;
@@ -37,7 +37,7 @@ body {
 .signup-box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: 40px;
     border-radius: 25px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     width: 25%;
@@ -82,7 +82,7 @@ body {
     padding-bottom: 2px;
 }
 
-.account-button {
+.bar-button {
     color: rgb(255, 253, 208);
     background-color: rgb(192, 16, 51);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -94,6 +94,10 @@ body {
     padding-top: 2px;
     padding-bottom: 2px;
     margin-left: 5px;
+}
+#home-button {
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .bar {
